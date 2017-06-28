@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="?attr/menu_background"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/x20"
+    android:paddingTop="@dimen/x60">
+
+    <com.bc.demo.widget.CircleImageView
+        android:id="@+id/uer_head_civ"
+        android:layout_width="@dimen/x130"
+        android:layout_height="@dimen/x130"
+        android:src="@drawable/ic_avatar2"
+        app:border_color="@color/white"
+        app:border_overlay="false"
+        app:border_width="@dimen/x4" />
+
+    <ImageView
+        android:layout_width="@dimen/x150"
+        android:layout_height="@dimen/x150"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/home_menu_bg_selector" />
+
+    <TextView
+        android:id="@+id/uer_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uer_head_civ"
+        android:drawablePadding="3dp"
+        android:drawableRight="@drawable/ic_lv6"
+        android:maxWidth="@dimen/x240"
+        android:paddingTop="@dimen/x20"
+        android:text="DingDing"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uer_name_tv"
+        android:maxWidth="120dp"
+        android:paddingTop="@dimen/x10"
+        android:text="硬币: 100000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="@dimen/x20"
+        android:src="@drawable/ic_switch_daily" />
+
+</RelativeLayout>

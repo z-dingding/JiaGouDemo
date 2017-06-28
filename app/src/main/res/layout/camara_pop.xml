@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:background="@color/project_listitem_title"
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="66dip"
+            android:gravity="center"
+            android:text="设置你的靓照"
+            android:textColor="#333"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#ccc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dip" >
+
+            <Button
+                android:id="@+id/item_popupwindows_camera"
+                android:layout_width="0dip"
+                android:layout_height="90dip"
+                android:layout_marginTop="18dp"
+                android:layout_weight="1"
+                android:text="拍照"
+                android:background="#00000000"
+                android:drawableTop="@drawable/ic_from_galary"
+                android:textColor="#333"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/item_popupwindows_Photo"
+                android:layout_width="0dip"
+                android:layout_height="90dp"
+                android:layout_marginTop="18dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:drawableTop="@drawable/ic_from_camera"
+                android:text="相册"
+                android:textColor="#333"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:text="取消"
+            android:id="@+id/item_popupwindows_cancel"
+            android:layout_width="260dp"
+            android:layout_height="86dp"
+            android:drawableTop="@drawable/ic_x"
+            android:background="#00000000"
+            android:textColor="#fff"
+            android:padding="12dip"
+            android:textSize="18sp" />
+    </LinearLayout>
+<!-- android:background="@drawable/pop_btn_cancle" -->
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/fm_my_linearBackG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/colorPrimary_Light"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x350">
+            <com.bc.demo.widget.CircleImageView
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="@dimen/x140"
+                android:layout_height="@dimen/x140"
+                android:id="@+id/fm_my_circleImg">
+            </com.bc.demo.widget.CircleImageView>
+            <TextView
+
+                android:text="更换图像"
+                android:id="@+id/fm_my_tv_changePhoto"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+
+        <Switch
+            android:layout_margin="16dp"
+            android:textOn="@string/switch_off"
+            android:textOff="@string/switch_on"
+            android:id="@+id/fm_my_switch"
+            android:showText="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+
+        <TextView
+            android:textSize="@dimen/x30"
+            android:layout_marginRight="16dp"
+           android:layout_marginBottom="@dimen/x40"
+            android:text="记事本"
+            android:gravity="right"
+            android:id="@+id/fm_my_tv_noteBook"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+<!--<include layout="@layout/fm_my_content"/>
+
+    &lt;!&ndash;backgroundTint 底色,点击颜色
+app:elevation="6dp"//显示的阴影大小
+app:pressedTranslationZ="12dp"//点击时的阴影大小&ndash;&gt;
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fm_my_floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/x150"
+        android:layout_marginRight="@dimen/x40"
+        android:src="@android:drawable/ic_input_add" />-->
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/dt_fm_swiperRefershLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.bc.demo.widget.MyGridView
+                android:id="@+id/dt_fm_GV"
+               android:layout_height="0dp"
+                android:layout_weight="1"
+                android:numColumns="2"
+                android:layout_width="match_parent">
+            </com.bc.demo.widget.MyGridView>
+
+
+            <com.bc.demo.widget.MyListView
+                android:id="@+id/dt_fm_LV"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+            </com.bc.demo.widget.MyListView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+</LinearLayout>

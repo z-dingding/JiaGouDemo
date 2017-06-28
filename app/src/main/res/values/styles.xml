@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="search_icon">@mipmap/ic_search_black_36dp</item>
+        <item name="colorPrimary">@color/colorPrimary_Night</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Night</item>
+    </style>
+
+
+
+
+    <!--日间模式 -->
+    <style name="AppTheme_Light" parent="AppTheme_Light.Base" />
+
+    <style name="AppTheme_Light.Base" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary_Light</item> <!-- 导航栏 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Light</item><!-- 状态栏 -->
+        <item name="colorAccent">@color/colorAccent_Light</item>
+        <item name="line_color">@color/day_line_color</item>
+        <item name="welcome_icon">@mipmap/welcome</item>
+        <item name="menu_background">@drawable/side_nav_bar</item>
+        <item name="search_icon">@mipmap/ic_search_white_36dp</item>
+    </style>
+
+
+
+    <!--夜间模式   Theme.AppCompat.NoActionBar-->
+    <style name="AppTheme_Night" parent="AppTheme_Night.Base" />
+
+    <style name="AppTheme_Night.Base" parent="@style/Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary_Night</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Night</item>
+        <item name="colorAccent">@color/colorAccent_Night</item>
+        <item name="line_color">@color/night_line_color</item>
+        <item name="welcome_icon">@mipmap/welcome_night</item>
+        <item name="menu_background">@drawable/side_nav_bar_drak</item>
+        <item name="search_icon">@mipmap/ic_search_black_36dp</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="welcome_icon" format="reference"/>
+    <attr name="line_color" format="reference"/>
+    <attr name="search_icon" format="reference"/>
+    <attr name="menu_background" format="reference"/>
+</resources>

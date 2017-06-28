@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/search_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x112" >
+            <TextView
+                android:id="@+id/search_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_marginTop="@dimen/x112"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/search_button"
+            android:text="点击更换图片"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x112" />
+
+        <ImageView
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginTop="@dimen/x400"
+            android:id="@+id/search_imgGlide"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/x200" />
+
+
+        <!--failureImageScaleType 加载失败的缩放类型 -->
+        <com.facebook.drawee.view.SimpleDraweeView
+            app:progressBarImage="@drawable/loading_img"
+            app:placeholderImage="@mipmap/ic_launcher"
+            app:placeholderImageScaleType="centerInside"
+            android:layout_gravity="center"
+            app:failureImage="@drawable/loading_fail"
+            app:failureImageScaleType="centerInside"
+            android:layout_marginLeft="@dimen/x100"
+            android:id="@+id/search_imgFrisco"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/x200" />
+    </FrameLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

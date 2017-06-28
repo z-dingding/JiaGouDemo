@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">我的架构</string>
+
+
+    <string name="news">综合</string>
+    <string name="tweet">动弹</string>
+    <string name="quick">快速</string>
+    <string name="explore">发现</string>
+    <string name="me">我的</string>
+    <string name="loading">加载中 &#8230;</string>
+
+<!-- switch开关 -->
+    <string name="switch_on">日间模式</string>
+    <string name="switch_off">夜间模式</string>
+    <!-- 搜索-->
+    <string name="search">搜索</string>
+
+    <!-- 打开，关闭抽屉 -->
+    <string name="open_drawerLayout">打开抽屉</string>
+    <string name="close_drawerLayout">关闭抽屉</string>
+
+</resources>

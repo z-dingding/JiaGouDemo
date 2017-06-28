@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!-- app:layout_behavior="@string/appbar_scrolling_view_behavior"
+      目的：通知AppBarLayout 这个特殊的view何时发生了滚动事件，
+      这个behavior需要设置在触发滚动事件的view之上。
+    -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/x112"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <FrameLayout
+            android:id="@+id/main_fmContent"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:background="?attr/line_color"
+                android:layout_height="@dimen/x3"
+                android:layout_width="match_parent"/>
+         <com.bc.demo.widget.MyFragmentTabHost
+             android:id="@+id/main_fmTabHost"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+            >
+         </com.bc.demo.widget.MyFragmentTabHost>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/ic_nav_add_selector"
+                android:id="@+id/main_fmTabHost_iv"
+                android:layout_width="@dimen/x100"
+                android:layout_height="@dimen/x100" />
+
+        </FrameLayout>
+
+    </LinearLayout>
